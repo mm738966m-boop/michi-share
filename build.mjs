@@ -11,7 +11,7 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const SITE = 'https://mm738966m-boop.github.io/michi-share/';
 const PAGES = [
   { src: 'src/college_1029.html', out: 'college/index.html', title: '金融AIカレッジの今', ogTitle: '金融AIカレッジの今', ogDesc: 'LP・診断・会員サイト・LINEの流れまで、今の全体像', og: 'og.png' },
-  { src: 'src/dairiten_1029.html', out: 'dairiten/index.html', title: '認定講師と代理店の流れ', ogTitle: 'これから作るもの：認定講師と代理店の流れ', ogDesc: 'カレッジの修了生が、会社の研修を教える講師になる仕組み（準備中の計画）', og: 'og_dairiten.png' },
+  { src: 'src/dairiten_1029.html', out: 'dairiten/index.html', title: '認定講師と代理店の流れ', ogTitle: 'これから作るもの：認定講師と代理店の流れ', ogDesc: '士業・弁護士・コンサルが、会社にAI研修を届ける仕組み（準備中の計画）', og: 'og_dairiten.png' },
 ];
 
 const b64 = u8 => Buffer.from(u8).toString('base64');
