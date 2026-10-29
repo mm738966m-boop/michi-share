@@ -10,7 +10,8 @@ if (!PW) { console.error('鍵を引数に'); process.exit(1); }
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SITE = 'https://mm738966m-boop.github.io/michi-share/';
 const PAGES = [
-  { src: 'src/college_1029.html', out: 'college/index.html', title: '金融AIカレッジの今', ogTitle: '金融AIカレッジの今（みちさん向け）', ogDesc: '全体像・コンテンツ・集客の流れ・お願いしたいこと' },
+  { src: 'src/college_1029.html', out: 'college/index.html', title: '金融AIカレッジの今', ogTitle: '金融AIカレッジの今', ogDesc: 'LP・診断・会員サイト・LINEの流れまで、今の全体像', og: 'og.png' },
+  { src: 'src/dairiten_1029.html', out: 'dairiten/index.html', title: '認定講師と代理店の流れ', ogTitle: 'これから作るもの：認定講師と代理店の流れ', ogDesc: 'カレッジの修了生が、会社の研修を教える講師になる仕組み（準備中の計画）', og: 'og_dairiten.png' },
 ];
 
 const b64 = u8 => Buffer.from(u8).toString('base64');
@@ -35,7 +36,7 @@ for (const p of PAGES) {
 <meta property="og:title" content="${p.ogTitle}">
 <meta property="og:description" content="${p.ogDesc}">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${SITE}img/og.png">
+<meta property="og:image" content="${SITE}img/${p.og}">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
