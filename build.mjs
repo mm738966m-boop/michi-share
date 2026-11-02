@@ -13,6 +13,7 @@ const PAGES = [
   { src: 'src/college_1029.html', out: 'college/index.html', title: '金融AIカレッジの今', ogTitle: '金融AIカレッジの今', ogDesc: 'LP・診断・会員サイト・LINEの流れまで、今の全体像', og: 'og.png' },
   { src: 'src/dairiten_1029.html', out: 'dairiten/index.html', title: '認定講師と代理店の流れ', ogTitle: 'これから作るもの：認定講師と代理店の流れ', ogDesc: '士業・弁護士・コンサルが、会社にAI研修を届ける仕組み（準備中の計画）', og: 'og_dairiten.png' },
   { src: 'src/yumekane_event_11.html', out: 'yumekane11/index.html', title: '11月の勉強会 イベントページ', ogTitle: '11月の勉強会 イベントページのお願い', ogDesc: 'ユメカネサロン11月の勉強会。カード5枚と個別ページ5本の文と、AIへの指示文', og: 'og_yumekane11.png' },
+  { src: 'src/claude_skill.html', out: 'claude-skill/index.html', title: 'ユメカネのページをClaudeで作る', ogTitle: 'ユメカネのページをClaudeで作る', ogDesc: '毎月の勉強会ページを、依頼カード1枚で。スキルの入れ方と使い方', og: 'og_skill.png' },
 ];
 
 const b64 = u8 => Buffer.from(u8).toString('base64');
